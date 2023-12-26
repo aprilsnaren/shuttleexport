@@ -6,6 +6,9 @@
 
 namespace aprilsnaren\shuttleexport; 
 
+use aprilsnaren\shuttleexport\Shuttle_Dump_File_Gzip;
+use aprilsnaren\shuttleexport\Shuttle_Dump_File_Plaintext;
+
 abstract class Shuttle_Dump_File {
 	/**
 	 * File Handle

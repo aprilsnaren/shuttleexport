@@ -1,5 +1,8 @@
 <?php
 namespace aprilsnaren\shuttleexport;
+
+use aprilsnaren\shuttleexport\Shuttle_Exception;
+
 class Shuttle_Dumper_ShellCommand extends Shuttle_Dumper {
 	function dump($export_file_location, $table_prefix='') {
 		$command = 'mysqldump -h ' . escapeshellarg($this->db->host) .

@@ -5,6 +5,10 @@
 
 namespace aprilsnaren\shuttleexport;
 
+use aprilsnaren\shuttleexport\Shuttle_DBConn;
+use aprilsnaren\shuttleexport\Shuttle_Dumper_ShellCommand;
+use aprilsnaren\shuttleexport\Shuttle_Dumper_Native;
+
 abstract class Shuttle_Dumper {
 	/**
 	 * Maximum length of single insert statement

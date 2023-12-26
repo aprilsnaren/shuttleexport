@@ -2,6 +2,9 @@
 
 namespace aprilsnaren\shuttleexport;
 
+use aprilsnaren\shuttleexport\Shuttle_Dump_File;
+use aprilsnaren\shuttleexport\Shuttle_Insert_Statement;
+
 class Shuttle_Dumper_Native extends Shuttle_Dumper {
 	public function dump($export_file_location, $table_prefix='') {
 		$eol = $this->eol;
