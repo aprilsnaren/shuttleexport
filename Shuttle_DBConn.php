@@ -1,6 +1,8 @@
 <?php
 namespace aprilsnaren\shuttleexport;
 
+use aprilsnaren\shuttleexport\Shuttle_DBConn_Mysqli;
+
 class Shuttle_DBConn {
 	public $host;
 	public $username;
@@ -20,12 +22,6 @@ class Shuttle_DBConn {
 	}
 
 	static function create($options) {
-		if (class_exists('mysqli')) {
-			$class_name = "Shuttle_DBConn_Mysqli";
-		} else {
-			$class_name = "Shuttle_DBConn_Mysql";
-		}
-
-		return new $class_name($options);
+		return new Shuttle_DBConn_Mysqli($options);
 	}
 }
