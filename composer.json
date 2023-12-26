@@ -1,0 +1,5 @@
+{
+    "name": "aprilsnaren/shuttleexport",
+    "description": "PHP based MySQL dump library",
+    "require": {}
+}
