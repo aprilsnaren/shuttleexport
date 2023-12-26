@@ -3,7 +3,7 @@ namespace aprilsnaren\shuttleexport;
 
 class Shuttle_DBConn_Mysqli extends Shuttle_DBConn {
 	function connect() {
-		$this->connection = @new MySQLi($this->host, $this->username, $this->password, $this->name);
+		$this->connection = @new \MySQLi($this->host, $this->username, $this->password, $this->name);
 
 		if ($this->connection->connect_error) {
 			throw new Shuttle_Exception("Couldn't connect to the database: " . $this->connection->connect_error);
